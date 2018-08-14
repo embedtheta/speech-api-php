@@ -7,9 +7,9 @@ require __DIR__ . '/vendor/autoload.php';
 use Google\Cloud\Speech\SpeechClient;
 
 # Your Google Cloud Platform project ID
-$projectId = 'e-no-b7700';
+$projectId = '';
 //json credential path
-$google_json_credential = 'E-NO-95324430f127.json';
+$google_json_credential = '';
 putenv("GOOGLE_APPLICATION_CREDENTIALS=$google_json_credential"); 
 # Instantiates a client
 $speech = new Google\Cloud\Speech\SpeechClient([

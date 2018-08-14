@@ -8,9 +8,9 @@ use Google\Cloud\Speech\SpeechClient;
 use Google\Cloud\Core\ExponentialBackoff;
 use Google\Cloud\Storage\StorageClient;
 # Your Google Cloud Platform project ID
-$projectId = 'e-no-b7700';
+$projectId = '';
 //json credential path
-$google_json_credential = 'E-NO-95324430f127.json';
+$google_json_credential = '';
 putenv("GOOGLE_APPLICATION_CREDENTIALS=$google_json_credential"); 
 
 # Instantiates a client
@@ -19,7 +19,7 @@ $speech = new SpeechClient([
     'languageCode' => 'fr-CA',
 ]);
 
-$bucketName="e-no-b7700.appspot.com";
+$bucketName="";
 $objectName="longvideo.wav";
  // Fetch the storage object
     $storage = new StorageClient();
@@ -27,7 +27,7 @@ $objectName="longvideo.wav";
 
 
 # The name of the audio file to transcribe
-//$fileName = "gs://e-no-b7700.appspot.com/E-NO en livestream (1).wav";
+//$fileName = "";
 
 # The audio file's encoding and sample rate
 $options = [
